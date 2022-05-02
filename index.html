@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Formulario </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='index.css' />
+</head>
+<body> 
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">Formulario de Trabajo</h1>
+                <p id="description" class="description text-center">
+                    Gracias por tomarse el tiempo de llenar el formulario!
+                </p>
+            </header>
+            <form id="formulario">
+                <div class="form-group">
+                    <label id="name-label" for="name">Nombre</label>
+                    <input type="text" name="Nombre" id="name" class="form-control" placeholder="Escribe tu nombre"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="name-label" for="name">Apellido</label>
+                    <input type="text" name="Nombre" id="name" class="form-control" placeholder="Escribe tu Apellido"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Correo</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Escribe tu correo"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Edad<span class="clue"></span></label>
+                    <input type="number" name="edad" id="number" min="18" max="99" class="form-control"
+                        placeholder="Edad" />
+                </div>
+                <div class="form-group">
+                    <p>Cual es tu estado actual?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Selecciona</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trabajo"> Trabajo medio tiempo</option>
+                        <option value="Desempleado">Desempleado</option>
+                        <option value="otros">Trabajo Tiempo Completo</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <p> Cuentas con 5 horas libres al día?</p>
+                    <label>
+                        <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                            checked />Si</label>
+                    <label>
+                        <input name="user-recommend" value="maybe" type="radio" class="input-radio" />No</label>
+    
+                    <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />No estoy
+                        seguro</label>
+                </div>
+    
+                <div class="form-group">
+                    <p>
+                        Donde te desempeñas mejor?
+                    </p>
+                    <select id="most-like" name="mostLike" class="form-control" required>
+                        <option disabled selected value>Selecciona una opcion</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">Css</option>
+                        <option value="JavaScrpt">JavaScript</option>
+                        <option value="Angular">Angular</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <p>Algun motivo por el cual deberiamos contratarte?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Escribe tu comentario aqui.."></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+</body>
+<script src='main.js'></script>
+</html>
